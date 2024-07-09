@@ -12,8 +12,8 @@ const App = () => {
 
  const handleTodos = (newTodo)=>{
   if(newTodo !== ""){
-      persistTodos([...todos,newTodo])
-      setTodos([...todos,newTodo]);
+      persistTodos([newTodo,...todos]);
+      setTodos([newTodo,...todos]);
    } 
  }
 
